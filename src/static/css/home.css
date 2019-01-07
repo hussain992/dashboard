@@ -1,0 +1,131 @@
+.container {
+	width: 1170px;
+	margin: auto;
+	/* background-color: blue; */
+}
+.black-bg {
+	background-color: #444444;
+	/* height: 70px; */
+}
+.menu-name {
+	color: #cecece;
+	font-size: 14px;
+	padding: 10px 0px;
+}
+.header-options {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* padding: 0px 15px; */
+}
+.menu-items {
+	padding: 30px 20px 5px;
+}
+.options {
+	display: flex;
+}
+.menu-list {
+	display: flex;
+}
+.options a {
+	color: white;
+	text-decoration: none;
+	padding: 0px 10px;
+}
+.options div {
+	color: white;
+}
+.ant-tabs-nav.ant-tabs-nav-animated {
+	width: 100%;
+	transform: translate3d(0px, 0px, 0px);
+}
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+	display: none !important;
+}
+.ant-tabs-tab {
+	width: 33.33%;
+	margin: 0px;
+	background-color: #cecece;
+	padding: 15px 0px !important;
+	margin: 0px !important;
+	border-right: 1px solid rgb(179, 179, 179)
+}
+.ant-tabs-tab-active.ant-tabs-tab {
+	background-color: #444444;
+	color: white;
+	font-weight: bold;
+}
+.ant-tabs-tab-active.ant-tabs-tab:hover {
+	color: #ccc !important;
+}
+.ant-tabs-nav-container-scrolling {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+	color: #000000;
+}
+.ant-tabs {
+	font-size: 13px;
+}
+.progress-btn {
+	background-color: #c1bdb6;
+	color: #f5f5f3;
+	padding: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.done-btn {
+	background-color: #849d7a;
+	color: #f5f5f3;
+	padding: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.ant-calendar-picker {
+	width: 150px;
+}
+.w100 {
+	width: 130px;
+}
+.ant-dropdown-link.ant-dropdown-trigger {
+	padding: 2px 10px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	background-color: white;
+	color: #666;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 11px;
+}
+.custom th {
+	background-color: #c6bfb8;
+}
+.seperator {
+	margin: 15px 0px;
+	border-top: 4px solid #444;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5px 15px 15px 15px;
+	border-bottom: 1px solid #888;
+}
+.seperator>.ant-dropdown-link.ant-dropdown-trigger {
+	padding: 0px 10px;
+}
+.table td {
+	vertical-align: middle !important;
+	text-align: left;
+}
+.table th {
+	text-align: left;
+}
+.date .ant-input {
+	color: #f00;
+	background-color: transparent;
+	border: none;
+}
+.date {
+	width: 100px;
+}
