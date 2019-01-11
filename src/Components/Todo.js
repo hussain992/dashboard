@@ -6,10 +6,15 @@ import {
 	DatePicker
 } from 'antd';
 import moment from 'moment';
+import styled from 'styled-components'
 
 const dateFormat = 'DD-MMM-YYYY';
 const { MonthPicker, RangePicker } = DatePicker;
 
+const Styledth = styled.th`
+  font-size: 14px;
+  font-weight: 500;
+`;
 const menu = (
   <Menu>
     <Menu.Item key="0">
@@ -106,16 +111,16 @@ export default class Todo extends Component {
        <Table striped bordered>
         <thead>
           <tr className="custom">
-            <th style={{width: '13  0px'}}>WORKFLOW</th>
-            <th>IMG</th>
-            <th>BRAND</th>
-            <th>NAME</th>
-            <th>NUMBER</th>
-            <th>TASK</th>
-            <th style={{width: '180px'}}>ASSIGNED TO </th>
-            <th style={{width: '100px'}}>DEADLINE</th>
-            <th>IN PROGRESS</th>
-            <th>DONE</th>
+            <Styledth style={{width: '120px'}}>WORKFLOW</Styledth>
+            <Styledth>IMG</Styledth>
+            <Styledth style={{width: '90px'}}>BRAND</Styledth>
+            <Styledth>NAME</Styledth>
+            <Styledth>NUMBER</Styledth>
+            <Styledth>TASK</Styledth>
+            <Styledth style={{width: '180px'}}>ASSIGNED TO </Styledth>
+            <Styledth style={{width: '100px'}}>DEADLINE</Styledth>
+            <Styledth style={{width: '130px'}}>IN PROGRESS</Styledth>
+            <Styledth>DONE</Styledth>
           </tr>
         </thead>
         <tbody>
@@ -131,7 +136,7 @@ export default class Todo extends Component {
                 </td>
                 <td style={{width: '140px'}}>
                   {/* <div className="w100"> */}
-                    <p className="text-left" style={{lineHeight: '1.6'}}>
+                    <p className="text-left" style={{lineHeight: '1.6', marginBottom: '0px'}}>
                       <img width="20px" height="20px" style={{float: 'left', marginRight: '10px'}} src={item.nameImg} />
                       {item.name}
                     </p>
@@ -140,7 +145,7 @@ export default class Todo extends Component {
                 <td>
                   {item.number}
                 </td>
-                <td>
+                <td className="px-2">
                   {item.task}
                 </td>
                 <td className="px-1">

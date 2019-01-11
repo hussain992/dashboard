@@ -10,6 +10,7 @@ import Header from '../Components/Header'
 import StatusTabs from './StatusTabs';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Menu, Dropdown, Icon } from 'antd';
+import styled from 'styled-components';
 
 const menu = (
   <Menu>
@@ -23,7 +24,26 @@ const menu = (
     <Menu.Item key="3">3rd menu item</Menu.Item>
   </Menu>
 );
+const Flex = styled.div`
+	display: flex;
+`;	
+const Tasks = styled.div`
+	width: 100px;
+	color: #cecece;
+	background-color: #333;
+	padding: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+`;
 
+const Simple = styled.div`
+	text-transform : uppercase;
+	border-right: 1px solid #ddd;
+	font-size: 14px;
+	padding: 5px 15px;
+	color :#666;
+
+`;
 export default class Home extends Component {
 	render() {
 		return ( 
@@ -33,14 +53,23 @@ export default class Home extends Component {
 				{/* <DatePicker /> */}
 				<Header/>
 				<div>
-					<div className="seperator">
-						<div className="pr-3 pt-2"> who: </div>
-						<Dropdown overlay={menu} trigger={['click']}>
-							<a className="ant-dropdown-link" href="#">
-								Company Person <Icon type="down" />
-							</a>
-						</Dropdown>
-					</div>
+					<Flex> 
+						<Tasks> Tasks </Tasks>
+						<Simple> Simple Request </Simple>
+					</Flex>
+					<Flex className="seperator">
+						<div>
+							<Tasks> Main </Tasks>
+						</div>
+						<Flex className="pr-3">
+							<div className="pr-3"> who: </div>
+							<Dropdown overlay={menu} trigger={['click']}>
+								<a className="ant-dropdown-link" href="#">
+									Company Person <Icon type="down" />
+								</a>
+							</Dropdown>
+						</Flex>
+					</Flex>
 				</div>
 				<StatusTabs/>
 			</div> 
